@@ -12,6 +12,4 @@ pip install nltk
 
 # Usage
 
-To change what text is summarized, edit the global text variable. The program will prompt you for two inputs, a multiplier and an output name. The output name is what the output text file should be called. The multiplier determines the length of the summary. A larger multiplier will result in a smaller summary as sentences with values greater than average * multiplier will be included.
-
-
+You will be prompted for three inputs. The first is the name of the text file that you want to use. If you leave this empty, the program will use the hard coded text instead. The next input is the multiplier. The multiplier determines the length of the summary. A larger multiplier will result in a smaller summary as sentences with values greater than average * multiplier will be included. The file input is the output file name. The output name is what the output text file should be called. 
