@@ -29,6 +29,12 @@ I hope this series provides at least the start of an answer to Ms. Attenberg’s
 
 """
 
+def readFromFile(fileName):
+    with open(fileName, 'r', encoding="utf8") as file:
+        data = file.read().replace('\n', '')
+    global text
+    text = data
+
 def createTLDR(data, sentenceTable, average, multiplier):
     current_line_length = 0
     f = open("output.txt", 'w')
@@ -88,6 +94,11 @@ def createTable(data):
     return freqT
 
 if __name__ == '__main__':
+
+    fileName = input("Enter the text file that you want to read from (should end in .txt): ")
+
+    if len(fileName) > 0:
+        readFromFile(fileName)
 
     freqT = createTable(text)
     sentenceTable = sentenceValues(freqT, text)
