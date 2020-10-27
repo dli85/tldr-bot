@@ -108,14 +108,7 @@ if __name__ == '__main__':
         average += sentenceTable[s]
     average /= len(sentenceTable)
 
-    multiplier = input('What multiplier (default is 1.3): ')
-
-    try:
-        multiplier = int(multiplier)
-    except:
-        multiplier = 1.3
-    else:
-        multiplier = int(multiplier)
+    multiplier =  1.3
 
     outputName = input('Save the output as? (filename should end in .txt) Default is output.txt: ')
 
