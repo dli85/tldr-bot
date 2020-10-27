@@ -13,6 +13,6 @@ pip install nltk
 
 ## Usage
 
-Run tldr.py to create a new tldr from an existing text source. You will be prompted for three inputs. The first is the name of the text file that you want to use. If you leave this empty, the program resort to the hard coded text instead. The next input is the multiplier. The multiplier determines the length of the summary. A larger multiplier will result in a smaller summary as sentences with values greater than average * multiplier will be included. The file input is the output file name. The output name is what the output text file should be called. 
+Run tldr.py to create a new tldr from an existing text source. You will be prompted for two inputs. The first is the name of the text file that you want to use. If you leave this empty, the program resort to the hard coded text instead. The second is what you want the output text file should be called. 
 
 Run the wikipediaCrawl.py file to gather text from a wikipedia article. The file will prompt you for two inputs, a article link and an output name. The article link is the link of the wikipedia article that you want to crawl. The output name is the name of the final text file (must end in .txt). If one is not provided, the article title will be used instead.
