@@ -90,7 +90,9 @@ if __name__ == '__main__':
 
     scoresList.sort()
 
-    scoreFloor = scoresList[int(len(scoresList)*0.78)]
+    topPercent = 0.78
+
+    scoreFloor = scoresList[int(len(scoresList)*topPercent)]
 
     outputName = input('Save the output as? (filename should end in .txt) Default is output.txt: ')
 
@@ -98,5 +100,3 @@ if __name__ == '__main__':
         outputName = 'output.txt'
 
     createTLDR(text, sentenceTable, scoreFloor)
-
-
