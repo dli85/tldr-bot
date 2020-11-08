@@ -1,7 +1,7 @@
 # tldr bot
 
 ## Overview
-This is a program which takes in a block of text and attempts to summarize it. The bot works by first creating a dictionary of word frequencies based on the non-stopwords words in the text. Each sentence is then assigned a value based on its word frequencies. To compensate for the fact that longer sentences have an inherent advantage, sentence scores will be divided by their length. Finally, sentences with the highest scores are used to create the summarized version of the text. Sentences with the bottom 78% of scores will be excluded from the final summary.
+This is a program which takes in a block of text and attempts to summarize it. The bot works by first creating a dictionary of word frequencies based on the non-stopwords words in the text. Stopwords are words such as "the" and "is" that do not add any meaning to a sentence. Each sentence is then assigned a value based on its word frequencies. To compensate for the fact that longer sentences have an inherent advantage, sentence scores will be divided by their length. Finally, sentences with the highest scores are used to create the summarized version of the text. Sentences with the bottom 78% of scores will be excluded from the final summary.
 
 ## Installation
 
