@@ -13,6 +13,6 @@ pip install nltk
 
 ## Usage
 
-Run tldr.py to create a new tldr from an existing text source. You will be prompted for two inputs. The first is the name of the text file that you want to use. If you leave this empty, the program use the sample text file isntead (the sample text file contains an article from the New York Times). The second input is what you want the output text file should be called. If this field is left empty, the program will name the output file "output.txt". The program is hardcoded to exclude the bottom 78% percent of sentences from the final summary. You can change this value by chaning the hardcoded variable "topPercent" to something else.
+Run tldr.py to create a new tldr from an existing text source. The program will prompt you for the name of a textfile to read from. The output will also be a textfile containing the shortened text.
 
-Run the wikipediaCrawl.py file to gather text from a wikipedia article. The file will prompt you for two inputs, a article link and an output name. The article link is the link of the wikipedia article that you want to crawl. The output name is the name of the final text file (must end in .txt). If one is not provided, the article title will be used instead.
+Run the wikipediaCrawl.py file to gather text from a wikipedia article. You will need to provide the program with an article link and an output name. The output name is the name of the final text file (must end in .txt). If one is not provided, the article title will be used as the name.
